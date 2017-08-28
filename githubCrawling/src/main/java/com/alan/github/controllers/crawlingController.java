@@ -55,7 +55,6 @@ class crawlingController{
 	public GitInfo getInfoByName( @PathVariable String name) {
 		GitInfo info = gRepository.findByName(name);
 		return info;
-//		caj3368
 	}
 
 	
