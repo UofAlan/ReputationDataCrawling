@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1> Welcome to data crawling page! </h1> <br/>
+	<h2>Grab contacts from Linkedin NetWork Contacts</h2><br/>
+	<form action="/crawling" method="GET">
+    		<input type="submit" name="button1" value="UpdateDataFromLinkedin" />
+	</form>
+	<h2>Search for Contacts in Database</h2>
+        <form action="/search" method="POST">
+            <input type="text" name="search" id="search" th:value="${search}" />
+            <input type="submit" value="Search" />
+        </form>
+	<br/>
+	<!-- <h2>${found1.name}</h2> -->
+</body>
+</html>
